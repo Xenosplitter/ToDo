@@ -99,6 +99,7 @@
 
         body {
             background-color: var(--independence);
+            font-family: "Ubuntu", Arial, Helvetica, sans-serif;
             min-height: 100vh;
         }
 
@@ -141,9 +142,27 @@
         2.1 Structure, logo
     ------------------------------------------------------ */
 
+        #header-img {
+            background-image: url("../img/big-chores.png");
+            width: 100vw;
+            height: 50vh;
+        }
+
     /* ------------------------------------------------------
         2.2 Header text
     ------------------------------------------------------ */
+
+        .header-text-container {
+            position: relative;
+            height: 100%;
+            width: 100%;
+        }
+
+        .header-text-box {
+            position: absolute;
+            bottom: 1.5vh;
+            left: 1.5vh;
+    }
 
 /* ------------------------------------------------------
     3. Sections
@@ -157,27 +176,40 @@
         3.2. Main Index section
     ------------------------------------------------------ */ 
 
+        .text-column {
+            padding-top: 2em;
+            clear: left;
+        }
+
 /* ------------------------------------------------------
     4. Footer
 ------------------------------------------------------ */
 
-        /*footer {
-            background-color: var(--darkpurple);
-            vertical-align: center;
-        }*/
-
         footer {
             background-color: var(--darkpurple);
-            vertical-align: center;
-            position: absolute;
+            vertical-align: middle;
             color: white;
             width: 100%;
-            bottom: 0;
         }
 
         footer p {
             padding: 2.5vh 5vw;
             margin: 0;
+        }
+
+        /* Footer needs this to stick to the bottom*/
+        html, body {
+            height: 100%;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        .content {
+            flex: 1 0 auto;
+        }
+        .footer {
+            flex-shrink: 0;
         }
 
 
