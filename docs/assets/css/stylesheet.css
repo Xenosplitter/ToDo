@@ -4,61 +4,23 @@
 
     1. Global
         1.1. Fonts
-            1.1.1. Header font - Minecraft
-            1.1.2. Text font - Ubuntu
+            1.1.1. Text font - Ubuntu
         1.2. General styles
         1.3. Color scheme
         1.4. Typography
         1.5. Custom class
         1.6. Icons class
-    A. Common Across Sizes
         2. Header
             2.1. Structure, logo
             2.2. Header text
-        3. Sections
-            3.1 Section header
-            3.2. Main Index section
-            3.3. Realms section
-            3.4. Host section
-            3.5. DIY section
-            3.6. Contacts section
-        4. Footer
-    B. Small Screens
-        2. Header
-            2.1. Structure, logo
-            2.2. Header text
-        3. Sections
-            3.1 Section header
-            3.2. Main Index section
-            3.3. Realms section
-            3.4. Host section
-            3.5. DIY section
-            3.6. Contacts section
-        4. Footer
-    C. Mid-size Screens
-        2. Header
-            2.1. Structure, logo
-            2.2. Header text
-        3. Sections
-            3.1 Section header
-            3.2. Main Index section
-            3.3. Realms section
-            3.4. Host section
-            3.5. DIY section
-            3.6. Contacts section
-        4. Footer
-    D. Large Screens
-        2. Header
-            2.1. Structure, logo
-            2.2. Header text
-        3. Sections
-            3.1 Section header
-            3.2. Main Index section
-            3.3. Realms section
-            3.4. Host section
-            3.5. DIY section
-            3.6. Contacts section
-        4. Footer
+    3. Sections
+        3.1 Section header
+        3.2. Main Index section
+        3.3. Realms section
+        3.4. Host section
+        3.5. DIY section
+        3.6. Contacts section
+    4. Footer
     5. Media queries
 
 ------------------------------------------------------ */
@@ -71,27 +33,8 @@
         1.1. Fonts
     ------------------------------------------------------ */
 
-        /* ------------------------------------------------------
-            1.1.1. Header font - Minecraft
-        ------------------------------------------------------ */
-			
-			/* https://css-tricks.com/snippets/css/using-font-face/ */
-			@font-face {
-                font-family: "Minecraft";
-                font-weight: normal;
-                font-style: normal;
-                src: url("../fonts/minecraft/MinecraftRegular.otf") format("opentype");
-            }
-
-            @font-face {
-                font-family: "Minecraft";
-                font-weight: bold;
-                font-style: normal;
-                src: url("../fonts/minecraft/MinecraftTen.ttf") format("truetype");
-            }
-
 		/* ------------------------------------------------------
-            1.1.2. Text font - Ubuntu
+            1.1.1. Text font - Ubuntu
         ------------------------------------------------------ */
 
             @font-face {
@@ -154,43 +97,13 @@
         1.2. General styles
     ------------------------------------------------------ */
 
-        body {
-            background-color: var(--independence);
-            font-family: "Minecraft", "Ubuntu", Arial, sans-serif;
-            font-size: large;
-            color: white;
-            margin: 0 auto;
-            padding: 0;
-            overflow-x: hidden;
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
     /* ------------------------------------------------------
         1.3. Color scheme
     ------------------------------------------------------ */
-    
-        * { /* Custom colors, now with names! */
-            --darkpurple:   #27233A;
-            --independence: #505168;
-            --laurelgreen:  #B3C0A4;
-            --beige:        #EAEFD3;
-            --goldcrayola:  #DCC48E;
-        }
 
     /* ------------------------------------------------------
         1.4. Typography
     ------------------------------------------------------ */
-        
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Minecraft', 'Ubuntu', Arial, sans-serif;
-        }
 
     /* ------------------------------------------------------
         1.5. Custom Class
@@ -201,431 +114,37 @@
     ------------------------------------------------------ */
 
 /* ------------------------------------------------------
-    A. Common Across Sizes
+    2. Header
 ------------------------------------------------------ */
 
     /* ------------------------------------------------------
-        2. Header
+        2.1 Structure, logo
     ------------------------------------------------------ */
-
-        /* ------------------------------------------------------
-            2.1 Structure, logo
-        ------------------------------------------------------ */
-
-            header {
-                background-color: var(--darkpurple);
-                width: 100%;
-            }
-
-        /* ------------------------------------------------------
-            2.2 Header text
-        ------------------------------------------------------ */
-
-            header nav {
-                overflow: hidden;
-            }
-
-            nav ul {
-                list-style-type: none;
-                overflow: hidden;
-                padding: 0;
-                margin: 0;
-            }
-
-            nav li {
-                float: left;
-            }
-
-            nav a {
-                display: block;
-                text-align: center;
-                padding: 1.5vh 2vw;
-                font-family: 'Minecraft', 'Ubuntu', Arial, sans-serif;
-                font-size: larger;
-                color: white;
-                font-weight: bold;
-                text-decoration: none;
-            }
-
-            nav a:hover, nav a#active {
-                background-color: var(--independence);
-            }
 
     /* ------------------------------------------------------
-        3. Sections
+        2.2 Header text
     ------------------------------------------------------ */
 
-        /* ------------------------------------------------------
-            3.1. Section header
-        ------------------------------------------------------ */
+/* ------------------------------------------------------
+    3. Sections
+------------------------------------------------------ */
 
-            /* Center text in banner */
-            .parallax > div {
-                height: 50vh;
-                padding-left: 7.5vw;
-                font-size: 32px;
-                display: table-cell;
-                vertical-align: middle;
-            }
+    /* ------------------------------------------------------
+        3.1. Section header
+    ------------------------------------------------------ */
 
-        /* ------------------------------------------------------
-            3.2. Main Index section
-        ------------------------------------------------------ */ 
+    /* ------------------------------------------------------
+        3.2. Main Index section
+    ------------------------------------------------------ */ 
 
-            #intro {
-                padding: 1vh 2.5vw;
-            }
+/* ------------------------------------------------------
+    4. Footer
+------------------------------------------------------ */
 
-            .column-wrapper {
-                justify-content: center;
-                display: flex;
-                flex-wrap: wrap;
-                width: 100%;
-            }
-
-            .guide-column {
-                flex: 1; /* Grow all columns equally */
-                margin: 0 2.5vw 5vh;
-            }
-
-            .guide-link {
-                font-weight: bold;
-                font-size: 24px;
-                color: white;
-            }
-
-            .guide-link:visited {
-                color: white;
-            }
-
-            .minecraft-img {
-                width: 100%;
-                border-radius: 2.5%;
-            }
-
-            .host-text {
-                line-height: 150%;
-            }
-
-        /* ------------------------------------------------------
-            3.3. Realms section
-        ------------------------------------------------------ */
-
-        main > p.page-text {
-            line-height: 200%;
-            padding: 1vh 10vw;
-        }
-
-        nav#editions ul {
-            width: 70%;
-            margin: 3.5vh auto;
-        }
-
-        nav#editions li {
-            width: 50%;
-        }
-
-        nav#editions a {
-            margin: 0 5vw;
-            color: var(--darkpurple);
-            border: 1px solid var(--darkpurple);
-            border-radius: 15px;
-            background-color: var(--goldcrayola);
-        }
-
-        nav#editions a:hover {
-            background-color: var(--beige);
-        }
-
-        /* ------------------------------------------------------
-            3.4. Host section
-        ------------------------------------------------------ */
-
-        /* ------------------------------------------------------
-            3.5. DIY section
-        ------------------------------------------------------ */
-
-        /* ------------------------------------------------------
-            3.6. Contact section
-        ------------------------------------------------------ */
-
-        input[type=text], select, textarea {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-            margin-top: 6px;
-            margin-bottom: 16px;
-            resize: vertical;
-          }
-          
-          input[type=submit] {
-            background-color: #4CAF50;
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-          }
-          
-          input[type=submit]:hover {
-            background-color: var(--laurelgreen);
-          }
-          
-          #form-container {
-            max-width: 65%;
-            border-radius: 5px;
+        footer {
             background-color: var(--darkpurple);
-            padding: 20px;
-            margin: 0 auto 3.5vh;
-          }
-
-    /* ------------------------------------------------------
-        4. Footer
-    ------------------------------------------------------ */
-
-            footer {
-                background-color: var(--darkpurple);
-                vertical-align: center;
-            }
-
-            footer p {
-                padding: 2.5vh 5vw;
-                margin: 0;
-            }
-
-            footer a {
-                color: white;
-            }
-
-/* ------------------------------------------------------
-    B. Small screens
------------------------------------------------------- */
-
-@media only screen and (max-width: 640px) {
-    /* ------------------------------------------------------
-        2. Header
-    ------------------------------------------------------ */
-
-        /* ------------------------------------------------------
-            2.1 Structure, logo
-        ------------------------------------------------------ */
-
-            .parallax {
-                /* The image used */
-                background-image: url("../img/minecraft-banner.jpg");
-            
-                /* Full height */
-                height: 50vh;
-            
-                /* Create the parallax scrolling effect */
-                background-attachment: fixed;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-
-        /* ------------------------------------------------------
-            2.2 Header text
-        ------------------------------------------------------ */
-        
-            /* With 5 nav elements, 20% width ensures all are equally sized to fit the full navbar width */
-            nav li {
-                width: 20%;
-            }
-
-    /* ------------------------------------------------------
-        3. Sections
-    ------------------------------------------------------ */
-
-        /* ------------------------------------------------------
-            3.1. Section header
-        ------------------------------------------------------ */
-
-        /* ------------------------------------------------------
-            3.2. Main Index section
-        ------------------------------------------------------ */
-
-            .guide-column {
-                min-width: 85%;
-            }
-
-        /* ------------------------------------------------------
-            3.3. Realms section
-        ------------------------------------------------------ */
-
-        /* ------------------------------------------------------
-            3.4. Host section
-        ------------------------------------------------------ */
-
-        /* ------------------------------------------------------
-            3.5. DIY section
-        ------------------------------------------------------ */
-
-        /* ------------------------------------------------------
-            3.6. Contact section
-        ------------------------------------------------------ */
-
-    /* ------------------------------------------------------
-        4. Footer
-    ------------------------------------------------------ */
-
-}
-
-/* ------------------------------------------------------
-    C. Medium screens
------------------------------------------------------- */
-
-@media only screen and (min-width: 641px) and (max-width: 1440px) {
-    /* ------------------------------------------------------
-        2. Header
-    ------------------------------------------------------ */
-
-        /* ------------------------------------------------------
-            2.1 Structure, logo
-        ------------------------------------------------------ */
-        
-            .parallax {
-            /* The image used */
-            background-image: url("../img/minecraft-banner.jpg");
-        
-            /* Full height */
-            height: 50vh;
-        
-            /* Create the parallax scrolling effect */
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
+            vertical-align: center;
         }
-
-        /* ------------------------------------------------------
-            2.2 Header text
-        ------------------------------------------------------ */
-
-    /* ------------------------------------------------------
-        3. Sections
-    ------------------------------------------------------ */
-
-        /* ------------------------------------------------------
-            3.1. Section header
-        ------------------------------------------------------ */
-
-        /* ------------------------------------------------------
-            3.2. Main Index section
-        ------------------------------------------------------ */
-
-            /* Columns can get wider, as one moves down below */
-            .guide-column {
-                min-width: 40%;
-            }
-
-            /* We only want to split this column on medium sizes, so we need a new name */
-            .sub-column {
-                flex: 1; /* Grow all columns equally */
-                margin: 0 2.5vw 5vh;
-            }
-
-
-            /* Basically creates a new .row for the diy column */
-            .large-on-medium {
-                justify-content: center;
-                display: flex;
-                flex-wrap: wrap;
-                width: 100%;
-            }
-
-        /* ------------------------------------------------------
-            3.3. Realms section
-        ------------------------------------------------------ */
-
-        /* ------------------------------------------------------
-            3.4. Host section
-        ------------------------------------------------------ */
-
-        /* ------------------------------------------------------
-            3.5. DIY section
-        ------------------------------------------------------ */
-
-        /* ------------------------------------------------------
-            3.6. Contact section
-        ------------------------------------------------------ */
-
-    /* ------------------------------------------------------
-        4. Footer
-    ------------------------------------------------------ */
-
-}
-
-/* ------------------------------------------------------
-    D. Large screens
------------------------------------------------------- */
-
-@media only screen and (min-width: 1441px) {
-    /* ------------------------------------------------------
-        2. Header
-    ------------------------------------------------------ */
-
-        /* ------------------------------------------------------
-            2.1 Structure, logo
-        ------------------------------------------------------ */
-
-        .parallax {
-            /* The image used */
-            background-image: url("../img/minecraft-banner.jpg");
-        
-            /* Full height */
-            height: 50vh;
-        
-            /* Create the parallax scrolling effect */
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        /* ------------------------------------------------------
-            2.2 Header text
-        ------------------------------------------------------ */
-
-    /* ------------------------------------------------------
-        3. Sections
-    ------------------------------------------------------ */
-
-        /* ------------------------------------------------------
-            3.1. Section header
-        ------------------------------------------------------ */
-
-        /* ------------------------------------------------------
-            3.2. Main Index section
-        ------------------------------------------------------ */
-        
-            .guide-column {
-                max-width: 25vw;
-            }
-
-        /* ------------------------------------------------------
-            3.3. Realms section
-        ------------------------------------------------------ */
-
-        /* ------------------------------------------------------
-            3.4. Host section
-        ------------------------------------------------------ */
-
-        /* ------------------------------------------------------
-            3.5. DIY section
-        ------------------------------------------------------ */
-
-        /* ------------------------------------------------------
-            3.6. Contact section
-        ------------------------------------------------------ */
-
-    /* ------------------------------------------------------
-        4. Footer
-    ------------------------------------------------------ */
-
-}
 
 /* ------------------------------------------------------
     5. Media queries
