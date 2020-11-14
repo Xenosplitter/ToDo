@@ -99,6 +99,7 @@
 
         body {
             background-color: var(--independence);
+            min-height: 100vh;
         }
 
         a {
@@ -168,15 +169,15 @@
         footer {
             background-color: var(--darkpurple);
             vertical-align: center;
+            position: absolute;
+            color: white;
+            width: 100%;
+            bottom: 0;
         }
 
         footer p {
             padding: 2.5vh 5vw;
             margin: 0;
-        }
-
-        footer a {
-            color: white;
         }
 
 
